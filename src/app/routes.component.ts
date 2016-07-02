@@ -1,5 +1,6 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
 import { AppComponent } from './app.component';
+//import { ContactsComponent } from './contacts/contacts.component';
 
 const routes: RouterConfig = [
   {
