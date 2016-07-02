@@ -2,12 +2,17 @@
   <span>{{title}}</span>
 </md-toolbar>
 
+<router-outlet></router-outlet>
+
 <div class="content">
   <div class="container">
     <md-card>
       <md-list>
 
-        <md-list-item *ngFor="let contact of contacts | async" class="md-whiteframe-z1">
+        <md-list-item 
+          *ngFor="let contact of contacts | async" 
+          class="md-whiteframe-z1"
+          (click)="showDetails(contact.$key)">
           {{contact.firstname}} {{contact.lastname}}
         </md-list-item>
 
