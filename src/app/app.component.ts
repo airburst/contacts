@@ -3,6 +3,8 @@ import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+
 @Component({
   moduleId: module.id,
   selector: 'app-root',
@@ -12,5 +14,12 @@ import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
   providers: [MdIconRegistry]
 })
 export class AppComponent {
+
+  constructor(af: AngularFire) {
+    this.contacts = af.database.list('contacts');
+  }
+
+  contacts: FirebaseListObservable<any[]>;
+
   title = 'app works!';
 }

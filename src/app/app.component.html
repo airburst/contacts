@@ -2,8 +2,8 @@
   {{title}}
 </h1>
 
-<md-card>
-   Basic card.
+<md-card *ngFor="let contact of contacts | async">
+  {{contact.$firstname}}
 </md-card>
 
 <button md-button>FLAT</button>
