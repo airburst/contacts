@@ -1,6 +1,5 @@
-[
-    {
-        "id": 1,
+"contacts": {
+    "billball": {
         "firstname": "Bill",
         "lastname": "Ball",
         "initials": "Mr and Mrs W",
@@ -12,8 +11,7 @@
         "email": "myrna@billball.fsnet.co.uk",
         "tel": "01495 290934"
     },
-    {
-        "id": 2,
+    "nickbarron": {
         "firstname": "Nick",
         "lastname": "Barron",
         "initials": "Mr and Mrs N",
@@ -24,9 +22,10 @@
         "postcode": "GL18 1NH",
         "email": "nickbarron@pageexecutive.com",
         "tel": "",
-        "archive": "n",
         "children": "Tasha, Tobin"
-    },
+    }
+}
+
     {
         "id": 3,
         "firstname": "Gethyn",
@@ -39,7 +38,6 @@
         "postcode": "CO3 0PF",
         "email": "gethyn@boustead.org",
         "tel": "01206 368884",
-        "archive": "n",
         "children": ""
     },
     {
@@ -54,7 +52,6 @@
         "postcode": "BS32 8DL",
         "email": "carol.bowes@talk21.com",
         "tel": "01454 610113",
-        "archive": "n",
         "children": ""
     },
     {
@@ -69,7 +66,6 @@
         "postcode": "SW15 2BY",
         "email": "606bryan@armymail.mod.uk",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -84,7 +80,6 @@
         "postcode": "TR8 5NS",
         "email": "",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -99,7 +94,6 @@
         "postcode": "BA1 4AJ",
         "email": "",
         "tel": "1225422506",
-        "archive": "n",
         "children": ""
     },
     {
@@ -114,7 +108,6 @@
         "postcode": "W8 7SJ",
         "email": "cavanaghjoseph@hotmail.com",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -129,7 +122,6 @@
         "postcode": "HP1 1NA",
         "email": "richard.a.coles@gsk.com",
         "tel": "01442 253096",
-        "archive": "n",
         "children": "Sebi, Dominic"
     },
     {
@@ -144,7 +136,6 @@
         "postcode": "OX7 4AB",
         "email": "antcorbett@gmail.com",
         "tel": "07920 445908",
-        "archive": "n",
         "children": "Chloe, Daisy and Charlie"
     },
     {
@@ -159,7 +150,6 @@
         "postcode": "BS7 9AG",
         "email": "",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -174,7 +164,6 @@
         "postcode": "SN25 1TT",
         "email": "",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -189,7 +178,6 @@
         "postcode": "PO9 6DE",
         "email": "dominic.digby@zen.co.uk",
         "tel": "02392 410092",
-        "archive": "n",
         "children": "Bella, Archie"
     },
     {
@@ -204,7 +192,6 @@
         "postcode": "TR8 5QA",
         "email": "",
         "tel": "01872-572246",
-        "archive": "n",
         "children": ""
     },
     {
@@ -219,7 +206,6 @@
         "postcode": "IP32 7DN",
         "email": "fairhurst_w@hotmail.com",
         "tel": "01284 760104",
-        "archive": "n",
         "children": ""
     },
     {
@@ -234,7 +220,6 @@
         "postcode": "SY4 1ED",
         "email": "fairhurst_paul@hotmail.com",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -249,7 +234,6 @@
         "postcode": "",
         "email": "",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -264,7 +248,6 @@
         "postcode": "NP12 0EG",
         "email": "amanda.froude@btopenworld.com",
         "tel": "01495 231060",
-        "archive": "n",
         "children": ""
     },
     {
@@ -279,7 +262,6 @@
         "postcode": "BT30 8DR",
         "email": "mark_gidlow_jackson@hotmail.com",
         "tel": "",
-        "archive": "n",
         "children": "Emma, Oliver"
     },
     {
@@ -294,7 +276,6 @@
         "postcode": "NP13 2HN",
         "email": "",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -309,7 +290,6 @@
         "postcode": "",
         "email": "",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -324,7 +304,6 @@
         "postcode": "SW11 1LT",
         "email": "williamhjkeith@btinternet.com",
         "tel": "0207 223 8939",
-        "archive": "n",
         "children": "Isla, Tana, Clover"
     },
     {
@@ -339,7 +318,6 @@
         "postcode": "NP13 3JD",
         "email": "",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -354,7 +332,6 @@
         "postcode": "NP13 3EE",
         "email": "eleanorandelwyn@googlemail.com",
         "tel": "01495 292262",
-        "archive": "n",
         "children": ""
     },
     {
@@ -369,7 +346,6 @@
         "postcode": "TR6 0DX",
         "email": "",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -384,7 +360,6 @@
         "postcode": "TD5 7BB",
         "email": "harumf@hotmail.com",
         "tel": "07770 503 976",
-        "archive": "n",
         "children": ""
     },
     {
@@ -399,7 +374,6 @@
         "postcode": "TW11 0DN",
         "email": "",
         "tel": "07768 994374",
-        "archive": "n",
         "children": ""
     },
     {
@@ -414,7 +388,6 @@
         "postcode": "HP27 9PA",
         "email": "catherinemoores@live.co.uk",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -429,7 +402,6 @@
         "postcode": "RG8 9JH",
         "email": "keburah@hotmail.com",
         "tel": "",
-        "archive": "n",
         "children": "Connor"
     },
     {
@@ -444,7 +416,6 @@
         "postcode": "BN7 3BY",
         "email": "lisa_janemurphy@yahoo.co.uk",
         "tel": "01206 368848",
-        "archive": "n",
         "children": ""
     },
     {
@@ -459,7 +430,6 @@
         "postcode": "SN8 2HZ",
         "email": "jim.plumstead@btinternet.co.uk",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -474,7 +444,6 @@
         "postcode": "BA1 5JR",
         "email": "joronxin@hotmail.com",
         "tel": "01225 470307",
-        "archive": "n",
         "children": ""
     },
     {
@@ -489,7 +458,6 @@
         "postcode": "EH49 6BJ",
         "email": "",
         "tel": "",
-        "archive": "n",
         "children": ""
     },
     {
@@ -504,7 +472,6 @@
         "postcode": "CT14 7AH",
         "email": "carolesmyth@tiscali.co.uk",
         "tel": "1304382115",
-        "archive": "n",
         "children": ""
     },
     {
@@ -519,7 +486,6 @@
         "postcode": "SP9 7 YQ",
         "email": "rupert.steptoe@btinternet.com",
         "tel": "01980 629222",
-        "archive": "n",
         "children": ""
     },
     {
@@ -534,7 +500,6 @@
         "postcode": "DL10 7PT",
         "email": "",
         "tel": "01748 810267",
-        "archive": "n",
         "children": "Philip, Daniel"
     },
     {
@@ -549,7 +514,6 @@
         "postcode": "SO22 6RP ",
         "email": "helentivey@hotmail.com",
         "tel": "01962 890786 ",
-        "archive": "n",
         "children": "Oliver, Alexander , Isabelle"
     },
     {
@@ -564,7 +528,6 @@
         "postcode": "SN9 6LG",
         "email": "steve-webb@talk21.com",
         "tel": "01672 851177",
-        "archive": "n",
         "children": "Jemima, Freddy"
     },
     {
@@ -579,7 +542,6 @@
         "postcode": "BA2 3QJ",
         "email": "carly_playle@yahoo.co.uk",
         "tel": "7711318090",
-        "archive": "n",
         "children": ""
     },
     {
@@ -594,7 +556,6 @@
         "postcode": "BT18 9DB",
         "email": "",
         "tel": "",
-        "archive": "n",
         "children": "Charlotte, Bridget"
     }
-]
+}

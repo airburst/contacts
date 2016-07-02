@@ -21,5 +21,5 @@ export class AppComponent {
 
   contacts: FirebaseListObservable<any[]>;
 
-  title = 'app works!';
+  title = 'Contacts';
 }

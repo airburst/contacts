@@ -3,25 +3,18 @@
 </h1>
 
 <md-card *ngFor="let contact of contacts | async">
-  {{contact.$firstname}}
+  {{contact.firstname}} {{contact.lastname}}
 </md-card>
 
-<button md-button>FLAT</button>
-<button md-raised-button>RAISED</button>
-<button md-icon-button>
-   <md-icon class="md-24">favorite</md-icon>
-</button>
-<button md-fab>
-   <md-icon class="md-24">add</md-icon>
-</button>
-<button md-mini-fab>
-   <md-icon class="md-24">add</md-icon>
-</button>
+<md-card>
+  <button md-button>FLAT</button>
+  <button md-icon-button>
+    <md-icon class="md-24">favorite</md-icon>
+  </button>
+  <button md-raised-button color="primary">PRIMARY</button>
+  <button md-raised-button color="accent">ACCENT</button>
+  <button md-raised-button color="warn">WARN</button>
 
-<button md-raised-button color="primary">PRIMARY</button>
-<button md-raised-button color="accent">ACCENT</button>
-<button md-raised-button color="warn">WARN</button>
-
-<button md-button disabled>off</button>
-<button md-raised-button [disabled]="isDisabled">off</button>
-<button md-mini-fab [disabled]="isDisabled">check circle</button>
+  <button md-button disabled>off</button>
+  <button md-raised-button [disabled]="isDisabled">off</button>
+</md-card>
