@@ -1,10 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar class="fixed-toolbar md-primary md-peekaboo-active">
+  <span>{{title}}</span>
+</md-toolbar>
 
-<md-card *ngFor="let contact of contacts | async">
-  {{contact.firstname}} {{contact.lastname}}
-</md-card>
+<md-content class="md-padding" layout="row" layout-wrap layout-align="center start">
+  <div flex="50" flex-xs="100" layout="column">
+    <md-card *ngFor="let contact of contacts | async">
+      {{contact.firstname}} {{contact.lastname}}
+    </md-card>
+  </div>
+</md-content>
 
 <!--<md-card *ngFor="let contact of contacts | async">
   <md-card-title>
