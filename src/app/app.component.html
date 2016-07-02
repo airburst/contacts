@@ -1,39 +1,17 @@
-<md-toolbar class="fixed-toolbar md-primary md-peekaboo-active">
+<md-toolbar class="fixed-toolbar md-primary">
   <span>{{title}}</span>
 </md-toolbar>
 
-<md-content class="md-padding" layout="row" layout-wrap layout-align="center start">
-  <div flex="50" flex-xs="100" layout="column">
-    <md-card *ngFor="let contact of contacts | async">
-      {{contact.firstname}} {{contact.lastname}}
+<div class="content">
+  <div class="container">
+    <md-card>
+      <md-list>
+
+        <md-list-item *ngFor="let contact of contacts | async" class="md-whiteframe-z1">
+          {{contact.firstname}} {{contact.lastname}}
+        </md-list-item>
+
+      </md-list>
     </md-card>
   </div>
-</md-content>
-
-<!--<md-card *ngFor="let contact of contacts | async">
-  <md-card-title>
-    <md-card-title-text>
-      <span class="md-headline">{{contact.firstname}} {{contact.lastname}}</span>
-    </md-card-title-text>
-  </md-card-title>
-  <md-card-content>
-    <md-card-actions layout="row" layout-align="end center">
-      <button md-icon-button>
-        <md-icon class="md-24">delete</md-icon>
-      </button>
-    </md-card-actions>
-  </md-card-content>
-</md-card>-->
-
-<!--<md-card>
-  <button md-button>FLAT</button>
-  <button md-icon-button>
-    <md-icon class="md-24">favorite</md-icon>
-  </button>
-  <button md-raised-button color="primary">PRIMARY</button>
-  <button md-raised-button color="accent">ACCENT</button>
-  <button md-raised-button color="warn">WARN</button>
-
-  <button md-button disabled>off</button>
-  <button md-raised-button [disabled]="isDisabled">off</button>
-</md-card>-->
+</div>
