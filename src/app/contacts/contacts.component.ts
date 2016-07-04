@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 import { FirebaseListObservable } from 'angularfire2';
 import { ContactsService } from '../contacts.service';
 import { Contact } from '../contact';
@@ -15,14 +16,17 @@ export class ContactsComponent implements OnInit {
   id: string;
   contacts: FirebaseListObservable<any[]>;
 
-  constructor(private contactsService: ContactsService) {
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private contactsService: ContactsService
+  ) {
     this.contacts = contactsService.getContacts();
   }
 
   ngOnInit() { }
 
   showDetails(id) {
-    // change route to ContactDetails/:id
-    console.log(id);
+    this.router.navigate(['./', id], { relativeTo: this.route });
   }
 }
