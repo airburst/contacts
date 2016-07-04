@@ -1,8 +1,22 @@
-<div>
+<div *ngIf="contact">
   <p>
-    Id: {{id}}
+    First name: {{contact.firstname}}
   </p>
   <p>
-    {{contact.firstname}}
+    Surname: {{contact.lastname}}
+  </p>
+  <p>
+    Address:
+    {{contact.line1}}
+    {{contact.line2}}
+    {{contact.city}}
+    {{contact.county}}
+    {{contact.postcode}}
+  </p>
+  <p>
+    Email: {{contact.email}}
+  </p>
+  <p>
+    Tel: {{contact.tel}}
   </p>
 </div>
