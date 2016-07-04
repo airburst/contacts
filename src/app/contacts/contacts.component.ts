@@ -21,7 +21,7 @@ export class ContactsComponent implements OnInit {
     private route: ActivatedRoute,
     private contactsService: ContactsService
   ) {
-    this.contacts = contactsService.getContacts();
+    this.contacts = contactsService.contacts$;
   }
 
   ngOnInit() { }

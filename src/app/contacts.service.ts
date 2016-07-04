@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
+import { Injectable, bind } from '@angular/core';
 import {
-  AngularFire, 
+  AngularFire,
   FirebaseListObservable,
   FirebaseObjectObservable
 } from 'angularfire2';
@@ -9,18 +9,16 @@ import { Contact } from './contact';
 @Injectable()
 export class ContactsService {
 
-  _contacts: FirebaseListObservable<Contact[]>;
-  
-  constructor(af: AngularFire) {
-    this._contacts = af.database.list('/contacts');
+  contacts$: FirebaseListObservable<Contact[]>;
+
+  constructor(private af: AngularFire) {
+    this.contacts$ = af.database.list('/contacts');
   }
 
-  getContacts() {
-    return this._contacts;
+  contact$(id: string): FirebaseListObservable<Contact[]> {
+    let url:string = '/contacts/' + id;
+    console.log('Getting id:', url)
+    return this.af.database.list(url);
   }
-
-  // getContact(id: string): FirebaseObjectObservable<Contact> {
-  //   return af.database.list('/contacts/' + id);
-  // }
 
 }
