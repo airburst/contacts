@@ -15,10 +15,9 @@ export class ContactsService {
     this.contacts$ = af.database.list('/contacts');
   }
 
-  contact$(id: string): FirebaseListObservable<Contact[]> {
+  contact$(id: string): FirebaseObjectObservable<Contact> {
     let url:string = '/contacts/' + id;
-    console.log('Getting id:', url)
-    return this.af.database.list(url);
+    return this.af.database.object(url);
   }
 
 }

@@ -14,19 +14,19 @@ import { Contact } from '../contact';
 export class ContactDetailsComponent implements OnInit {
 
   id: string;
-  contact: any;
+  contact: Contact;
   
   constructor(
     private route: ActivatedRoute,
     private contactsService: ContactsService
   ) {
     route.params.subscribe(params => { this.id = params['id']; });
-  }
-
-  ngOnInit() {
-    this.contact = this.contactsService.contact$(this.id).subscribe(queriedItems => {
-      console.log(queriedItems);
+    this.contactsService.contact$(this.id).subscribe(c => {
+      this.contact = <Contact>c;
+      console.log(c.firstname)
     });
   }
+
+  ngOnInit() {}
 
 }
