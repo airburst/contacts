@@ -5,8 +5,9 @@ import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
 import { MdToolbar } from '@angular2-material/toolbar';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
-// import { ContactsComponent } from './contacts/contacts.component';
+import { FirebaseListObservable } from 'angularfire2';
+//import { ContactsService } from './contacts.service';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @Component({
   moduleId: module.id,
@@ -18,19 +19,10 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 })
 export class AppComponent {
 
-  constructor(af: AngularFire) {
-    this.contacts = af.database.list('contacts');
-  }
-
   contacts: FirebaseListObservable<any[]>;
+  
+  constructor() { }
+
   title = 'Contacts';
-
-  showDetails(uid) {
-    console.log(uid);
-  }
-
-  delete($event) {
-
-  }
 
 }

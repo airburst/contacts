@@ -1,12 +1,12 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
 import { AppComponent } from './app.component';
-//import { ContactsComponent } from './contacts/contacts.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { ContactDetailsComponent } from './contact-details/contact-details.component';
 
 const routes: RouterConfig = [
-  {
-    path: 'contacts',
-    component: AppComponent
-  }
+  { path: '', redirectTo: 'contacts', terminal: true },
+  { path: 'contacts', component: ContactsComponent },
+  { path: 'contacts/:id', component: ContactDetailsComponent }
 ];
 
 export const APP_ROUTER_PROVIDERS = [

@@ -58,6 +58,7 @@ const barrels: string[] = [
   'app/app',
   'app/routes',
   'app/contacts',
+  'app/contact-details',
   /** @cli-barrel */
 ];
 
