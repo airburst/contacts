@@ -5,7 +5,7 @@ import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
 import { MdToolbar } from '@angular2-material/toolbar';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
-import { FirebaseListObservable } from 'angularfire2';
+//import { FirebaseListObservable } from 'angularfire2';
 //import { ContactsService } from './contacts.service';
 import { ContactsComponent } from './contacts/contacts.component';
 
@@ -19,7 +19,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 })
 export class AppComponent {
 
-  contacts: FirebaseListObservable<any[]>;
+  //contacts: FirebaseListObservable<any[]>;
   
   constructor() { }
 

@@ -1,22 +1,28 @@
-<div *ngIf="contact">
-  <p>
-    First name: {{contact.firstname}}
-  </p>
-  <p>
-    Surname: {{contact.lastname}}
-  </p>
-  <p>
-    Address:
-    {{contact.line1}}
-    {{contact.line2}}
-    {{contact.city}}
-    {{contact.county}}
-    {{contact.postcode}}
-  </p>
-  <p>
-    Email: {{contact.email}}
-  </p>
-  <p>
-    Tel: {{contact.tel}}
-  </p>
+<div class="content">
+  <div class="container">
+    <md-card class="no-padding" *ngIf="contact">
+      <md-list>
+        <md-list-item>
+          <h2>{{contact.firstname}} {{contact.lastname}}</h2>
+        </md-list-item>
+        <md-list-item class="md-3-line md-long-text">
+          <div class="md-list-item-text">
+            <p>{{contact.line1}}</p>
+            <p>{{contact.line2}}</p>
+            <p>{{contact.city}}</p>
+            <p>{{contact.county}}</p>
+            <p>{{contact.postcode}}</p>
+          </div>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-list-item>
+          <span><i md-icon>email</i> {{contact.email}}</span>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-list-item>
+          <span><i md-icon>phone</i> {{contact.tel}}</span>
+        </md-list-item>
+      </md-list>
+    </md-card>
+  </div>
 </div>

@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, ROUTER_DIRECTIVES } from '@angular/router';
+import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
+import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
+import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
+import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { ContactsService } from '../contacts.service';
 import { Contact } from '../contact';
 
@@ -8,7 +12,8 @@ import { Contact } from '../contact';
   selector: 'app-contact-details',
   templateUrl: 'contact-details.component.html',
   styleUrls: ['contact-details.component.css'],
-  providers: [ContactsService]
+  directives: [MD_CARD_DIRECTIVES, MD_BUTTON_DIRECTIVES, MD_LIST_DIRECTIVES, MdIcon],
+  providers: [ContactsService, MdIconRegistry]
 })
 export class ContactDetailsComponent {
 
