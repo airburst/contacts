@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, ROUTER_DIRECTIVES} from '@angular/router';
+import { ActivatedRoute, ROUTER_DIRECTIVES } from '@angular/router';
+import { Contact } from '../contact';
 
 @Component({
   moduleId: module.id,
