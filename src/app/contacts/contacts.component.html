@@ -1,16 +1,16 @@
 <div class="content">
   <div class="container">
-    <md-card>
-      <md-list>
-
-        <md-list-item 
-          *ngFor="let contact of contacts | async" 
-          class="md-whiteframe-z1"
-          (click)="showDetails(contact.$key)">
-          {{contact.firstname}} {{contact.lastname}}
-        </md-list-item>
-
-      </md-list>
-    </md-card>
+    <md-content>
+      <md-card class="no-padding">
+        <md-nav-list>
+          <md-list-item *ngFor="let contact of contacts | async">
+            <a md-line (click)="showDetails(contact.$key)">{{contact.firstname}} {{contact.lastname}}</a>
+            <!--<button md-icon-button (click)="showInfo(link)">
+                <md-icon>info</md-icon>
+            </button>-->
+          </md-list-item>
+        </md-nav-list>
+      </md-card>
+    </md-content>
   </div>
 </div>

@@ -16,7 +16,7 @@ import { IContact } from '../contact';
   directives: [MD_CARD_DIRECTIVES, MD_BUTTON_DIRECTIVES, MD_LIST_DIRECTIVES, MdIcon],
   providers: [ContactsService]
 })
-export class ContactsComponent implements OnInit {
+export class ContactsComponent {
 
   id: string;
   contacts: FirebaseListObservable<IContact[]>;
@@ -28,8 +28,6 @@ export class ContactsComponent implements OnInit {
   ) {
     this.contacts = contactsService.contacts$;
   }
-
-  ngOnInit() { }
 
   showDetails(id) {
     this.router.navigate(['./', id], { relativeTo: this.route });

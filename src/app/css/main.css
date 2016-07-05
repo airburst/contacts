@@ -10,20 +10,12 @@ html, body {
   padding-right: 15px;
 }
 
-md-list-item:hover {
-    background-color: #f1f1f1;
-}
-
-.content {
-    margin-top: 40px;
-}
-
 .no-padding {
   padding: 0 !important;
 }
 
 md-card {
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -36,9 +28,58 @@ md-card {
   .container {
     width: 970px;
   }
+  md-card {
+    margin-top: 40px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+
+
+md-whiteframe {
+  background: #fff;
+  margin: 30px;
+  height: 100px;
+}
+@media screen and (max-width: 599px) {
+  md-whiteframe {
+    margin: 7px;
+    height: 50px;
+    background-color: #c8e4fa;
+  }
+  md-whiteframe > span {
+    font-size: 0.4em;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  md-whiteframe {
+    margin: 20px;
+    height: 75px;
+  }
+  md-whiteframe > span {
+    font-size: 0.6em;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+  md-whiteframe {
+    margin: 20px;
+    height: 90px;
+    background-color: #fcddde;
+  }
+  md-whiteframe > span {
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  md-whiteframe {
+    margin: 25px;
+    height: 100px;
+    background-color: #F2FCE2;
+  }
+  md-whiteframe > span {
+    font-size: 1.0em;
   }
 }
