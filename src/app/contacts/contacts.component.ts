@@ -6,7 +6,7 @@ import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { FirebaseListObservable } from 'angularfire2';
 import { ContactsService } from '../contacts.service';
-import { Contact } from '../contact';
+import { IContact } from '../contact';
 
 @Component({
   moduleId: module.id,
@@ -19,7 +19,7 @@ import { Contact } from '../contact';
 export class ContactsComponent implements OnInit {
 
   id: string;
-  contacts: FirebaseListObservable<any[]>;
+  contacts: FirebaseListObservable<IContact[]>;
 
   constructor(
     private router: Router,

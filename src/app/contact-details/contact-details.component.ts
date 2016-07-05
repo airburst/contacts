@@ -5,7 +5,7 @@ import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { ContactsService } from '../contacts.service';
-import { Contact } from '../contact';
+import { IContact, Contact } from '../contact';
 
 @Component({
   moduleId: module.id,
@@ -18,7 +18,7 @@ import { Contact } from '../contact';
 export class ContactDetailsComponent {
 
   id: string;
-  contact: Contact;
+  contact: IContact;
   
   constructor(
     private route: ActivatedRoute,
@@ -26,7 +26,7 @@ export class ContactDetailsComponent {
   ) {
     route.params.subscribe(params => { this.id = params['id']; });
     this.contactsService.contact$(this.id).subscribe(c => {
-      this.contact = <Contact>c;
+      this.contact = <IContact>c;
     });
   }
 
