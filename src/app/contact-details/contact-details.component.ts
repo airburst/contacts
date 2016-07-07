@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, ROUTER_DIRECTIVES } from '@angular/router';
+import { Router, ActivatedRoute, ROUTER_DIRECTIVES } from '@angular/router';
 import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
@@ -19,8 +19,9 @@ export class ContactDetailsComponent {
 
   id: string;
   contact: IContact;
-  
+
   constructor(
+    private router: Router,
     private route: ActivatedRoute,
     private contactsService: ContactsService
   ) {
@@ -28,6 +29,10 @@ export class ContactDetailsComponent {
     this.contactsService.contact$(this.id).subscribe(c => {
       this.contact = <IContact>c;
     });
+  }
+
+  back() {
+    this.router.navigateByUrl('/contacts');
   }
 
 }
