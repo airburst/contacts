@@ -1,0 +1,15 @@
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 40px;
+}
+
+.pad-right {
+    padding-right: 15px;
+}

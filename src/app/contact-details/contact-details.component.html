@@ -1,28 +1,18 @@
 <div class="content">
   <div class="container">
-    <md-card class="no-padding" *ngIf="contact">
-      <md-list>
-        <md-list-item>
-          <h2>{{contact.firstname}} {{contact.lastname}}</h2>
-        </md-list-item>
-        <md-list-item class="md-3-line md-long-text">
-          <div class="md-list-item-text">
-            <p>{{contact.line1}}</p>
-            <p>{{contact.line2}}</p>
-            <p>{{contact.city}}</p>
-            <p>{{contact.county}}</p>
-            <p>{{contact.postcode}}</p>
-          </div>
-        </md-list-item>
-        <md-divider></md-divider>
-        <md-list-item>
-          <span><md-icon>email</md-icon> {{contact.email}}</span>
-        </md-list-item>
-        <md-divider></md-divider>
-        <md-list-item>
-          <span><md-icon>phone</md-icon> {{contact.tel}}</span>
-        </md-list-item>
-      </md-list>
+    <md-card *ngIf="contact">
+      <h2>{{contact.firstname}} {{contact.lastname}}</h2>
+      <p class="col">
+        <span>{{contact.line1}}</span>
+        <span>{{contact.line2}}</span>
+        <span>{{contact.city}}</span>
+        <span>{{contact.county}}</span>
+        <span>{{contact.postcode}}</span>
+      </p>
+      <div class="col">
+        <span *ngIf="contact.email" class="row"><md-icon class="pad-right">email</md-icon> {{contact.email}}</span>
+        <span *ngIf="contact.tel" class="row"><md-icon class="pad-right">phone</md-icon> {{contact.tel}}</span>
+      </div>
     </md-card>
   </div>
 </div>
