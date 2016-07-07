@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ROUTER_DIRECTIVES } from '@angular/router';
 import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
@@ -9,13 +9,13 @@ import { IContact, Contact } from '../contact';
 
 @Component({
   moduleId: module.id,
-  selector: 'app-contact-details',
-  templateUrl: 'contact-details.component.html',
-  styleUrls: ['contact-details.component.css'],
+  selector: 'app-edit-contact',
+  templateUrl: 'edit-contact.component.html',
+  styleUrls: ['edit-contact.component.css'],
   directives: [MD_CARD_DIRECTIVES, MD_BUTTON_DIRECTIVES, MD_LIST_DIRECTIVES, MdIcon],
   providers: [ContactsService, MdIconRegistry]
 })
-export class ContactDetailsComponent {
+export class EditContactComponent implements OnInit {
 
   id: string;
   contact: IContact;
@@ -31,16 +31,14 @@ export class ContactDetailsComponent {
     });
   }
 
-  back() {
+  ngOnInit() {}
+
+  cancel() {
     this.router.navigate(['../'], { relativeTo: this.route });
   }
 
   remove(id) {
     this.contactsService.remove(id);
-  }
-
-  edit(id) {
-    this.router.navigate(['./', 'edit'], { relativeTo: this.route });
   }
 
 }
