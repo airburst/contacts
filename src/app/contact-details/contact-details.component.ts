@@ -35,4 +35,8 @@ export class ContactDetailsComponent {
     this.router.navigateByUrl('/contacts');
   }
 
+  remove(id) {
+    this.contactsService.remove(id);
+  }
+
 }

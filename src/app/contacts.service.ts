@@ -22,14 +22,17 @@ export class ContactsService {
 
   add(contact: IContact) {
     // Add new record into contacts collection
+    console.log('Adding contact: ', contact);
   }
 
-  update(contact) {
+  update(contact: IContact) {
     // Push update for contact record
+    console.log('Updating contact: ', contact);
   }
 
-  remove(contactId) {
+  remove(contactId: string) {
     // Delete contact record
+    console.log('Removing contact: ', contactId);
   }
 
 }
