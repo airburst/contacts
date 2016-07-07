@@ -27,7 +27,8 @@ const materialPkgs: string[] = [
   'card',
   'icon',
   'toolbar',
-  'list'
+  'list',
+  'input'
 ];
 
 materialPkgs.forEach((pkg) => {
@@ -45,6 +46,7 @@ const barrels: string[] = [
   '@angular/compiler',
   '@angular/http',
   '@angular/router',
+  '@angular/forms',
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
 

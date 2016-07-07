@@ -1,34 +1,37 @@
 <div class="content">
   <div class="container">
     <md-card *ngIf="contact">
-      <div class="row">
-        <h2>Edit {{contact.firstname}} {{contact.lastname}}</h2>
-      </div>
-      <p class="col">
-        <span>{{contact.firstname}}</span>
-        <span>{{contact.lastname}}</span>
-      </p>
-      <p class="col">
-        <span>{{contact.line1}}</span>
-        <span>{{contact.line2}}</span>
-        <span>{{contact.city}}</span>
-        <span>{{contact.county}}</span>
-        <span>{{contact.postcode}}</span>
-      </p>
-      <div class="col">
-        <span *ngIf="contact.email" class="row">
+      <form>
+        <div class="row">
+          <h2>Edit {{contact.firstname}} {{contact.lastname}}</h2>
+        </div>
+
+        <md-input placeholder="First name" value="{{contact.firstname}}">
+        </md-input>
+
+        <p class="col">
+          <span>{{contact.line1}}</span>
+          <span>{{contact.line2}}</span>
+          <span>{{contact.city}}</span>
+          <span>{{contact.county}}</span>
+          <span>{{contact.postcode}}</span>
+        </p>
+        <div class="col">
+          <span *ngIf="contact.email" class="row">
           <md-icon class="pad-right">email</md-icon>
           <a href="mailto:{{contact.email}}">{{contact.email}}</a>
         </span>
-        <span *ngIf="contact.tel" class="row">
+          <span *ngIf="contact.tel" class="row">
           <md-icon class="pad-right">phone</md-icon>
           {{contact.tel}}
         </span>
-        <div class="item right">
-          <button md-button (click)="cancel($event)">CANCEL</button>
-          <button md-button (click)="remove(contact.$key)" color="warn">REMOVE</button>
+          <div class="item right">
+            <button md-button (click)="cancel($event)">CANCEL</button>
+            <button md-button (click)="remove(contact.$key)" color="warn">REMOVE</button>
+          </div>
         </div>
-      </div>
+
+      </form>
     </md-card>
   </div>
 </div>
