@@ -1,7 +1,12 @@
 <div class="content">
   <div class="container">
     <md-card *ngIf="contact">
-      <h2>{{contact.firstname}} {{contact.lastname}}</h2>
+      <div class="row">
+        <h2>{{contact.firstname}} {{contact.lastname}}</h2>
+        <button md-fab>
+          <md-icon class="md-24">edit</md-icon>
+        </button>
+      </div>
       <p class="col">
         <span>{{contact.line1}}</span>
         <span>{{contact.line2}}</span>
@@ -10,8 +15,14 @@
         <span>{{contact.postcode}}</span>
       </p>
       <div class="col">
-        <span *ngIf="contact.email" class="row"><md-icon class="pad-right">email</md-icon> {{contact.email}}</span>
-        <span *ngIf="contact.tel" class="row"><md-icon class="pad-right">phone</md-icon> {{contact.tel}}</span>
+        <span *ngIf="contact.email" class="row">
+          <md-icon class="pad-right">email</md-icon>
+          <a href="mailto:{{contact.email}}">{{contact.email}}</a>
+        </span>
+        <span *ngIf="contact.tel" class="row">
+          <md-icon class="pad-right">phone</md-icon>
+          {{contact.tel}}
+        </span>
       </div>
     </md-card>
   </div>
